@@ -1,0 +1,54 @@
+.result {
+  display: none;
+}
+
+.result fieldset {
+  width: 50%;
+}
+
+#result {
+  background-color: lightgray;
+  border: 2px solid blue;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+#result p {
+  padding: 0;
+  margin: 0;
+}
+
+#result p b {
+  color: red;
+}
+
+.addDirectorData, .directorOperations, #addDirector {
+  display: none;
+}
+
+.addDirectorData fieldset, .directorOperations fieldset, #addDirector fieldset {
+  width: 50%;
+}
+
+.addDirectorData fieldset fieldset, .directorOperations fieldset fieldset, #addDirector fieldset fieldset {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.addDirectorData fieldset ul, .directorOperations fieldset ul, #addDirector fieldset ul {
+  list-style: none;
+  padding: 0;
+}
+
+#addDirector {
+  display: block;
+}
+
+#clear {
+  display: none;
+}
+
+#exit {
+  float: right;
+}

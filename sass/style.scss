@@ -1,0 +1,58 @@
+.result {
+  display: none;
+
+  fieldset {
+    width: 50%;
+
+  }
+
+
+}
+
+
+#result {
+  background-color: lightgray;
+  border: 2px solid blue;
+  padding: 5px;
+  margin: 5px 0;
+
+  p {
+    padding: 0;
+    margin: 0;
+
+    b {
+      color: red;
+    }
+  }
+
+}
+
+.addDirectorData, .directorOperations,  #addDirector{
+  display: none;
+  fieldset {
+    width: 50%;
+    fieldset {
+      box-sizing: border-box;
+      width: 100%;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+}
+
+
+#addDirector {
+  display: block;
+}
+
+
+
+#clear {
+  display: none;
+}
+
+#exit {
+  float: right;
+}

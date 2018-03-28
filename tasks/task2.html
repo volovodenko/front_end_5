@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<section class="addDirector">
+    <form>
+        <input type="button" id="addDirector" value="Добавить директора">
+    </form>
+</section>
+
+<section class="addDirectorData">
+    <fieldset>
+        <legend>
+            Введите данные директора
+        </legend>
+        <form>
+            <ul>
+                <li>
+                    <label for="dirName">Имя</label>
+                    <input type="text" id="dirName" value="">
+                </li>
+                <li>
+                    <label for="dirSurname">Фамилия</label>
+                    <input type="text" id="dirSurname" value="">
+                </li>
+                <li>
+                    <label for="dirRate">Ставка</label>
+                    <input type="number" id="dirRate" value="">
+                </li>
+                <li>
+                    <label for="dirDays">Кол-во отработанных дней</label>
+                    <input type="number" id="dirDays" value="">
+                </li>
+                <li>
+                    <input type="reset" id="addDirectorData" value="Добавить">
+                </li>
+            </ul>
+        </form>
+    </fieldset>
+</section>
+
+<section class="directorOperations">
+    <fieldset>
+        <legend>
+            <span id="dirWelcome"></span> добро пожаловать в панель управления предприятием
+        </legend>
+
+        <section>
+            <fieldset>
+                <legend>
+                    Добавить работника
+                </legend>
+                <form>
+                    <ul>
+                        <li>
+                            <label for="workerName">Имя</label>
+                            <input type="text" id="workerName" value="">
+                        </li>
+                        <li>
+                            <label for="workerSurname">Фамилия</label>
+                            <input type="text" id="workerSurname" value="">
+                        </li>
+                        <li>
+                            <label for="workerRate">Ставка</label>
+                            <input type="number" id="workerRate" value="">
+                        </li>
+                        <li>
+                            <label for="workerDays">Кол-во отработанных дней</label>
+                            <input type="number" id="workerDays" value="">
+                        </li>
+                        <li>
+                            <input type="reset" id="addWorker" value="Добавить">
+                        </li>
+                    </ul>
+                </form>
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>
+                    Уволить работника
+                </legend>
+                <form>
+                    <ul>
+                        <li>
+                            <label for="delWorkerName">Имя</label>
+                            <input type="text" id="delWorkerName" value="">
+                        </li>
+                        <li>
+                            <label for="delWorkerSurname">Фамилия</label>
+                            <input type="text" id="delWorkerSurname" value="">
+                        </li>
+                        <li>
+                            <input type="reset" id="delWorker" value="Уволить">
+                        </li>
+                    </ul>
+                </form>
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>
+                    Обновить ставку работника
+                </legend>
+                <form>
+                    <ul>
+                        <li>
+                            <label for="workerRateName">Имя</label>
+                            <input type="text" id="workerRateName" value="">
+                        </li>
+                        <li>
+                            <label for="workerRateSurname">Фамилия</label>
+                            <input type="text" id="workerRateSurname" value="">
+                        </li>
+                        <li>
+                            <label for="newWorkerRate">Ставка</label>
+                            <input type="number" id="newWorkerRate" value="">
+                        </li>
+                        <li>
+                            <input type="reset" id="editWorkerRate" value="Обновить">
+                        </li>
+                    </ul>
+                </form>
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>
+                    Получить данные работника
+                </legend>
+                <form>
+                    <ul>
+                        <li>
+                            <label for="getWorkerName">Имя</label>
+                            <input type="text" id="getWorkerName" value="">
+                        </li>
+                        <li>
+                            <label for="getWorkerSurname">Фамилия</label>
+                            <input type="text" id="getWorkerSurname" value="">
+                        </li>
+                        <li>
+                            <input type="reset" id="getWorker" value="Получить">
+                        </li>
+                    </ul>
+                </form>
+            </fieldset>
+        </section>
+
+        <section>
+            <input type="button" id="showAll" value="Отобразить всех работников">
+            <input type="button" id="exit" value="Выход из панели управления">
+        </section>
+
+    </fieldset>
+</section>
+
+<hr>
+<section class="result">
+    <fieldset>
+        <legend>
+            Список работников
+        </legend>
+        <section>
+            <input type="button" id="clear" value="Уволить всех">
+        </section>
+        <div id="flash"></div>
+        <div id="result"></div>
+    </fieldset>
+</section>
+</body>
+<script src="./../js/task2.js"></script>
+</html>
